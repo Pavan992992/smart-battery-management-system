@@ -80,3 +80,18 @@ smart-battery-management-system/
 ├── bms.h
 ├── fault_log.c
 └── README.md
+
+
+## 📷 Project Output
+
+### BMS Simulator Menu
+![BMS Menu](Screenshot%202026-08-27%20212215.png)
+
+### Battery Monitoring
+![Battery Status](Screenshot%202026-08-27%20212238.png)
+
+### BMS Protection
+![BMS Protection](Screenshot%202026-08-27%20212319.png)
+
+### Charging / Discharging
+![Charging and Discharging](Screenshot%202026-08-27%20212432.png)
