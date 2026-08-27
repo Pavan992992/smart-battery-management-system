@@ -1,12 +1,14 @@
-# Smart Battery Management System (BMS) Simulator
+# 🔋 Smart Battery Management System (BMS) Simulator
 
-A C-based Smart Battery Management System simulator designed to monitor battery parameters, simulate charging and discharging, calculate battery state information, and detect battery protection faults.
+A modular C-based Smart Battery Management System simulator designed to monitor battery parameters, simulate charging and discharging, calculate battery state information, and detect battery protection faults.
 
 ## 📌 Project Overview
 
 This project simulates the core functionality of a Battery Management System (BMS) for a 4-cell battery pack.
 
-The system continuously monitors:
+The system monitors important battery parameters and performs protection checks to identify abnormal operating conditions.
+
+### Monitored Parameters
 
 - Individual cell voltage
 - Cell temperature
@@ -27,12 +29,33 @@ The system continuously monitors:
 - SOH calculation
 - Charging simulation
 - Discharging simulation
-- Over-voltage and under-voltage protection
-- Over-temperature protection
+- Under-voltage protection
+- Over-voltage protection
+- Under-temperature / over-temperature monitoring
 - Over-current protection
 - Fault detection and logging
 - Menu-driven interface
 - Modular multi-file C implementation
+
+## 🧩 BMS Protection
+
+The simulator checks battery parameters against predefined safety limits.
+
+### Voltage Protection
+Detects:
+- Under-voltage
+- Over-voltage
+
+### Temperature Protection
+Detects:
+- Low temperature
+- High temperature
+
+### Current Protection
+Detects:
+- Over-current conditions
+
+Detected faults are recorded in the fault log for monitoring and debugging.
 
 ## 🛠️ Technologies Used
 
@@ -47,3 +70,13 @@ The system continuously monitors:
 - Modular Programming
 - Debugging
 
+## 📂 Project Structure
+
+```text
+smart-battery-management-system/
+│
+├── main.c
+├── bms.c
+├── bms.h
+├── fault_log.c
+└── README.md
